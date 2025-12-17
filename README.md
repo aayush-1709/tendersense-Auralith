@@ -56,7 +56,7 @@ This enables faster decisions and higher-quality responses.
 
 ---
 
-##  Architecture Explanation (Layer-wise)
+##  Architecture Explanation 
 
 - **Tender Portals**  
   These include government portals, private procurement platforms, and email-based tender notifications. TenderSense is designed to adapt to multiple data sources.
