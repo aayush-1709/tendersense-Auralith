@@ -8,7 +8,7 @@ Live Demo: https://tendersense.vercel.app/
 
 
 <p align="center">
-  <img src="https://github.com/aayush-1709/tendersense-Auralith/raw/main/assets/img.png" alt="TenderSense System Architecture" width="800"/>
+  <img src="https://github.com/aayush-1709/tendersense-Auralith/raw/main/assets/img.png" alt="TenderSense System Architecture" width="450"/>
 </p>
 
 
