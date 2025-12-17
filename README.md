@@ -4,11 +4,11 @@
 TenderSense is a web-based platform that helps organizations **discover, analyze, and respond to tenders and RFPs efficiently**.  
 It reduces manual effort, improves requirement clarity, and enables faster, more informed bidding decisions through AI-assisted workflows.
 
-🌐 Live Demo: https://tendersense.vercel.app/
+Live Demo: https://tendersense.vercel.app/
 
 ---
 
-## 📌 Overview
+##  Overview
 
 TenderSense is built to solve a common challenge faced by sales and proposal teams — **tender management is slow, repetitive, and highly manual**.
 
@@ -16,7 +16,7 @@ Teams often spend days searching portals, reading lengthy documents, and prepari
 
 ---
 
-## ❗ Problem Statement
+## Problem Statement
 
 In traditional tender workflows:
 
@@ -54,11 +54,11 @@ This enables faster decisions and higher-quality responses.
 
 ---
 
-## 🏗️ System Architecture
+##  System Architecture
 
 TenderSense follows a **modular, enterprise-style architecture** that mirrors real-world tender workflows and supports scalability.
 
-### 📐 Architecture Diagram
+###  Architecture Diagram
 
 ```text
                           ┌───────────────────────────┐
