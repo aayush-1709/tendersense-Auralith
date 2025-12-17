@@ -9,11 +9,11 @@ export function DashboardHeader() {
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-4">
             <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
-              <ArrowLeft className="h-4 w-4" />
+              <ArrowLeft className="h-4 w-4" /><br></br>
               <div className="flex items-center gap-2">
-                <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-blue-600 to-cyan-500 flex items-center justify-center">
+                {/* <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-blue-600 to-cyan-500 flex items-center justify-center">
                   <span className="text-white font-bold text-lg">T</span>
-                </div>
+                </div> */}
                 <span className="text-xl font-semibold">TenderSense</span>
               </div>
             </Link>
