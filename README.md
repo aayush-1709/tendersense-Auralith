@@ -6,7 +6,11 @@ It reduces manual effort, improves requirement clarity, and enables faster, more
 
 Live Demo: https://tendersense.vercel.app/
 
-https://github.com/aayush-1709/tendersense-Auralith/blob/main/assets/img.png
+
+<p align="center">
+  <img src="https://github.com/aayush-1709/tendersense-Auralith/raw/main/assets/img.png" alt="TenderSense System Architecture" width="800"/>
+</p>
+
 
 
 ---
