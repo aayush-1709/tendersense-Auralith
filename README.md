@@ -1,140 +1,113 @@
 # TenderSense  
 ### Smart Tender & RFP Intelligence Platform
 
-TenderSense is a web-based platform designed to **simplify, speed up, and improve** the way organizations discover, analyze, and respond to tenders and RFPs (Request for Proposals).
+TenderSense is a web-based platform that helps organizations **discover, analyze, and respond to tenders and RFPs efficiently**.  
+It reduces manual effort, improves requirement clarity, and enables faster, more informed bidding decisions through AI-assisted workflows.
 
-Instead of manually scanning portals, reading long documents, and matching requirements line by line, TenderSense brings everything together in one intelligent workflow — saving time and improving response quality.
-
-🌐 Live Website: https://tendersense.vercel.app/
-
----
-
-## 🧩 The Problem We Are Solving
-
-Tender and RFP management is still largely manual for many organizations:
-
-- Teams spend **hours browsing multiple tender portals**
-- Requirement documents are **lengthy and difficult to analyze**
-- Spec matching is often **manual and error-prone**
-- Proposal preparation is **repetitive and time-consuming**
-- Important opportunities are **missed due to late discovery**
-
-These inefficiencies directly affect win rates, team productivity, and business growth.
+🌐 Live Demo: https://tendersense.vercel.app/
 
 ---
 
-## 💡 Our Solution: TenderSense
+## 📌 Overview
 
-TenderSense acts as an **AI-assisted tender intelligence system** that supports the entire tender response lifecycle — from discovery to final submission.
+TenderSense is built to solve a common challenge faced by sales and proposal teams — **tender management is slow, repetitive, and highly manual**.
 
-The platform helps teams:
-- Discover relevant tenders early  
-- Understand requirements clearly  
-- Match specifications accurately  
-- Generate structured responses quickly  
-
-All through a clean, easy-to-use web interface.
+Teams often spend days searching portals, reading lengthy documents, and preparing similar proposals repeatedly. TenderSense streamlines this entire process by introducing intelligent automation and structured workflows.
 
 ---
 
-## 🔍 Core Features
+## ❗ Problem Statement
 
-### 1️⃣ Automated Tender Discovery
-TenderSense continuously scans tender sources (government and private) and highlights opportunities that match business domains, saving manual search effort.
+In traditional tender workflows:
 
-### 2️⃣ Requirement & Specification Analysis
-Long and complex tender documents are broken down into structured, readable requirements so teams can quickly understand what is expected.
+- Teams manually scan multiple government and private portals  
+- RFP documents are lengthy and difficult to interpret  
+- Requirement matching is done manually and is error-prone  
+- Proposal creation consumes significant time and effort  
 
-### 3️⃣ Intelligent Spec Matching
-Using AI-based logic, TenderSense compares tender requirements with OEM or company product specifications and provides a **match score**, helping teams decide whether to bid or not.
-
-### 4️⃣ Proposal & Response Generation
-The platform helps generate **proposal-ready outputs** in structured formats (PDF / Excel), making responses easier to review, share, and submit.
-
-### 5️⃣ Risk Indicators & Alerts
-TenderSense flags:
-- Missing or unclear requirements  
-- Tight deadlines  
-- Low spec match scenarios  
-
-This helps teams take informed decisions before investing time.
-
-### 6️⃣ Performance & Insights Dashboard
-Users can track:
-- Number of tenders analyzed  
-- Match accuracy trends  
-- Time saved per response  
-- Overall response efficiency  
+As a result, opportunities are missed, response quality suffers, and teams struggle to scale.
 
 ---
 
-## 🧠 How TenderSense Works (High Level)
+## 💡 Solution
 
-1. Tender data is collected from relevant sources  
-2. Documents are parsed and structured  
-3. AI logic analyzes requirements and specs  
-4. Match scores and insights are generated  
-5. Structured outputs are prepared for submission  
+TenderSense introduces an **AI-powered tender intelligence workflow** that:
 
-This workflow reduces human effort while keeping full transparency and control.
+- Continuously identifies relevant tenders  
+- Converts complex documents into clear requirements  
+- Matches specifications using smart scoring logic  
+- Highlights risks and feasibility gaps  
+- Generates structured, proposal-ready outputs  
 
----
-
-## 🎯 Who Can Use TenderSense?
-
-- Sales & Business Development teams  
-- Proposal / Bid management teams  
-- OEM vendors and solution providers  
-- Consulting firms  
-- Startups & enterprises responding to RFPs  
-
-Anyone who regularly deals with tenders can benefit from TenderSense.
+This enables faster decisions and higher-quality responses.
 
 ---
 
-## 🚀 Benefits
+## 🌟 Key Features
 
-- Faster tender discovery  
-- Reduced manual workload  
-- Better requirement clarity  
-- Improved proposal quality  
-- Higher chances of winning bids  
-- Data-driven decision making  
-
----
-
-## 🛠️ Technology Overview
-
-- Frontend: Modern web framework (deployed on Vercel)
-- Backend & AI: Modular, agent-based design (scalable)
-- Data Handling: Structured document parsing & matching
-- Architecture: Designed to simulate real-world enterprise workflows
+- Automated tender discovery from multiple sources  
+- AI-driven requirement extraction  
+- Intelligent specification matching and scoring  
+- Risk and feasibility indicators  
+- Proposal and response document generation  
+- Clean dashboard with actionable insights  
 
 ---
 
-## 📌 Current Status
+## 🏗️ System Architecture
 
-TenderSense is currently available as a **working demo** showcasing the complete user journey — from tender discovery to structured response generation.
+TenderSense follows a **modular, enterprise-style architecture** that mirrors real-world tender workflows and supports scalability.
 
-Future enhancements include:
-- Advanced AI agents for deeper analysis  
-- Integration with real tender APIs  
-- Role-based access and collaboration  
-- Versioned proposal management  
+### 📐 Architecture Diagram
 
----
-
-## 🤝 Contributions & Feedback
-
-We welcome feedback, suggestions, and collaborations.  
-TenderSense is built with a strong focus on **real-world usability**, not just concepts.
-
----
-
-## 📄 License
-
-This project is developed for educational, demonstration, and innovation purposes.
-
----
-
-**TenderSense — Turning complex tenders into clear opportunities.**
+```text
+                          ┌───────────────────────────┐
+                          │      Tender Portals        │
+                          │ (Gov / Private / Emails)   │
+                          └─────────────┬─────────────┘
+                                        │
+                                        ▼
+                          ┌───────────────────────────┐
+                          │   Data Ingestion Layer     │
+                          │ (Crawler / Parser Agent)   │
+                          └─────────────┬─────────────┘
+                                        │
+                                        ▼
+          ┌────────────────────────────────────────────────┐
+          │             AI Orchestration Layer              │
+          │  (Master Agent coordinating Worker Agents)     │
+          │                                                │
+          │  • Requirement Extraction Agent                │
+          │  • Spec Matching Agent                          │
+          │  • Risk Analysis Agent                          │
+          │  • Scoring & Decision Agent                     │
+          └─────────────┬──────────────────────────────────┘
+                        │
+                        ▼
+          ┌────────────────────────────────────────────────┐
+          │              Business Logic Layer               │
+          │  • Tender Filtering Rules                       │
+          │  • Match Score Calculation                      │
+          │  • Response Structuring                         │
+          └─────────────┬──────────────────────────────────┘
+                        │
+                        ▼
+          ┌────────────────────────────────────────────────┐
+          │          Output & Document Generator            │
+          │  • Proposal Draft (PDF / Excel)                 │
+          │  • Structured Tables & Summaries                │
+          └─────────────┬──────────────────────────────────┘
+                        │
+                        ▼
+          ┌────────────────────────────────────────────────┐
+          │              Frontend (React)                   │
+          │  • Dashboard                                   │
+          │  • Tender Insights                              │
+          │  • Match Scores                                 │
+          │  • Download & Share Options                     │
+          └─────────────┬──────────────────────────────────┘
+                        │
+                        ▼
+          ┌────────────────────────────────────────────────┐
+          │         Deployment & Hosting (Vercel)           │
+          └────────────────────────────────────────────────┘
