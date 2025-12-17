@@ -6,7 +6,7 @@ It reduces manual effort, improves requirement clarity, and enables faster, more
 
 Live Demo: https://tendersense.vercel.app/
 
-![Uploading image.png…]()
+https://github.com/aayush-1709/tendersense-Auralith/blob/main/assets/img.png
 
 
 ---
