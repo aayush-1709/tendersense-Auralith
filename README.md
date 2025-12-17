@@ -43,7 +43,7 @@ This enables faster decisions and higher-quality responses.
 
 ---
 
-## 🌟 Key Features
+##  Key Features
 
 - Automated tender discovery from multiple sources  
 - AI-driven requirement extraction  
@@ -54,60 +54,94 @@ This enables faster decisions and higher-quality responses.
 
 ---
 
-##  System Architecture
+---
 
-TenderSense follows a **modular, enterprise-style architecture** that mirrors real-world tender workflows and supports scalability.
+##  Architecture Explanation (Layer-wise)
 
-###  Architecture Diagram
+- **Tender Portals**  
+  These include government portals, private procurement platforms, and email-based tender notifications. TenderSense is designed to adapt to multiple data sources.
 
-```text
-                          ┌───────────────────────────┐
-                          │      Tender Portals        │
-                          │ (Gov / Private / Emails)   │
-                          └─────────────┬─────────────┘
-                                        │
-                                        ▼
-                          ┌───────────────────────────┐
-                          │   Data Ingestion Layer     │
-                          │ (Crawler / Parser Agent)   │
-                          └─────────────┬─────────────┘
-                                        │
-                                        ▼
-          ┌────────────────────────────────────────────────┐
-          │             AI Orchestration Layer              │
-          │  (Master Agent coordinating Worker Agents)     │
-          │                                                │
-          │  • Requirement Extraction Agent                │
-          │  • Spec Matching Agent                          │
-          │  • Risk Analysis Agent                          │
-          │  • Scoring & Decision Agent                     │
-          └─────────────┬──────────────────────────────────┘
-                        │
-                        ▼
-          ┌────────────────────────────────────────────────┐
-          │              Business Logic Layer               │
-          │  • Tender Filtering Rules                       │
-          │  • Match Score Calculation                      │
-          │  • Response Structuring                         │
-          └─────────────┬──────────────────────────────────┘
-                        │
-                        ▼
-          ┌────────────────────────────────────────────────┐
-          │          Output & Document Generator            │
-          │  • Proposal Draft (PDF / Excel)                 │
-          │  • Structured Tables & Summaries                │
-          └─────────────┬──────────────────────────────────┘
-                        │
-                        ▼
-          ┌────────────────────────────────────────────────┐
-          │              Frontend (React)                   │
-          │  • Dashboard                                   │
-          │  • Tender Insights                              │
-          │  • Match Scores                                 │
-          │  • Download & Share Options                     │
-          └─────────────┬──────────────────────────────────┘
-                        │
-                        ▼
-          ┌────────────────────────────────────────────────┐
-          │         Deployment & Hosting (Vercel)           │
-          └────────────────────────────────────────────────┘
+- **Data Ingestion Layer**  
+  This layer is responsible for collecting tender documents and converting unstructured formats (PDFs, text files, emails) into machine-readable data using crawler and parser agents.
+
+- **AI Orchestration Layer**  
+  This is the intelligence core of TenderSense. A master agent coordinates multiple worker agents, each specializing in a specific task such as:
+  - Extracting requirements from long documents  
+  - Matching technical specifications  
+  - Identifying risks, gaps, and ambiguities  
+  - Computing match scores for decision-making  
+
+- **Business Logic Layer**  
+  Applies real-world rules such as eligibility checks, threshold-based filtering, and prioritization logic to ensure only relevant tenders are shortlisted.
+
+- **Output & Document Generator**  
+  Converts insights into structured, proposal-ready formats such as summaries, comparison tables, and downloadable PDF/Excel files.
+
+- **Frontend (React)**  
+  Provides users with an intuitive dashboard to view tenders, analyze match scores, review risks, and download response documents.
+
+- **Deployment (Vercel)**  
+  The platform is deployed on Vercel for fast performance, scalability, and seamless frontend hosting.
+
+---
+
+## 👥 Target Users
+
+TenderSense is useful for:
+
+- Business Development and Sales teams  
+- Proposal and Bid Management teams  
+- OEM vendors and solution providers  
+- Consulting firms responding to RFPs  
+- Enterprises handling frequent tenders  
+
+---
+
+##  Business Value
+
+Using TenderSense helps organizations:
+
+- Reduce time spent on tender discovery  
+- Improve accuracy in requirement matching  
+- Minimize human errors in proposals  
+- Respond faster to high-value opportunities  
+- Make data-driven bidding decisions  
+
+---
+
+##  Current Capabilities
+
+- End-to-end tender workflow demonstration  
+- Realistic enterprise-style architecture  
+- AI-assisted requirement analysis and scoring  
+- Structured and downloadable outputs  
+- Clean and responsive web interface  
+
+---
+
+##  Future Enhancements
+
+Planned improvements include:
+
+- Integration with live government and private tender APIs  
+- Advanced AI agents for deeper compliance checks  
+- Collaboration features for multi-user teams  
+- Role-based access and approval workflows  
+- Version tracking for proposal documents  
+
+---
+
+##  Use Case Example
+
+1. A new tender appears on a government portal  
+2. TenderSense ingests and parses the document  
+3. AI agents extract and analyze requirements  
+4. Specs are matched and scored automatically  
+5. Risks and gaps are highlighted  
+6. A structured proposal draft is generated  
+7. The team reviews and submits the response  
+
+---
+
+**TenderSense — turning complex tenders into clear, actionable opportunities.**
+
