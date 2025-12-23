@@ -200,7 +200,7 @@ export default function HomePage() {
       {/* Footer */}
       <footer className="border-t py-8">
         <div className="container mx-auto px-4 text-center text-sm text-muted-foreground">
-          <p>TenderSense • EY Techathon 6.0 • 2025</p>
+          <p>TenderSense • 2025</p>
         </div>
       </footer>
     </div>
